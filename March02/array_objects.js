@@ -58,6 +58,17 @@ const array = [
             sem4:80 
         },
         gender:"female"
+    },
+    {
+        firstName: "Raveena",
+        lastName: "D",
+        batch : "2023",
+        grade : {
+            sem1: 95,
+            sem2: 80,
+            sem3 : 70,
+            sem4:80 
+        }
     }
 ];
 
