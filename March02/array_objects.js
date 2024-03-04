@@ -4,6 +4,7 @@ const array = [
         firstName : "Harish",
         lastName : "Kathir",
         batch : "2024",
+        age: 22,
         grade : {
             sem1: 80,
             sem2: 78,
@@ -18,6 +19,7 @@ const array = [
         firstName : "Kavin",
         lastName : "Gunasekar",
         batch : "2024",
+        age: 22,
         grade : {
             sem1: 75,
             sem2: 69,
@@ -32,6 +34,7 @@ const array = [
         firstName : "Vijay",
         lastName : "vignesh",
         batch : "2024",
+        age: 23,
         grade : {
             sem1: 77,
             sem2: 88,
@@ -46,6 +49,7 @@ const array = [
         firstName : "Shakthi",
         lastName : "D",
         batch : "2024",
+        age: 23,
         grade : {
             sem1: 75,
             sem2: 78,
@@ -60,6 +64,7 @@ const array = [
         firstName : "Harishma",
         lastName : "Nair",
         batch : "2023",
+        age: 24,
         grade : {
             sem1: 92,
             sem2: 88,
@@ -74,6 +79,7 @@ const array = [
         firstName: "Jolene",
         lastName: "M",
         batch : "2024",
+        age: 24,
         grade : {
             sem1: 95,
             sem2: 80,
@@ -88,6 +94,7 @@ const array = [
         firstName: "Kirsten",
         lastName: "Kenndy",
         batch : "2023",
+        age: 24,
         grade : {
             sem1: 75,
             sem2: 80,
