@@ -92,3 +92,34 @@ const gradearray = array.flatMap((students) => {
 });
 
 console.log(gradearray);
+
+//key
+console.log(Object.keys(array));
+
+//length
+console.log(array.length);
+
+//reduce
+//to age
+const agearray = array.reduce((studentlist,student) => {
+    const age = student.age;
+    if(studentlist[age] == null){
+        studentlist[age] = [];
+    }
+    studentlist[age].push(student);
+    return studentlist;
+},{})
+
+console.log(agearray);
+
+//tobatch
+const batcharray = array.reduce((batch,curr) => {
+    const temp = curr.batch;
+    if(batch[temp] == null){
+        batch[temp] = [];
+    }
+    batch[temp].push(curr);
+    return batch;
+},{})
+
+console.log(batcharray);
