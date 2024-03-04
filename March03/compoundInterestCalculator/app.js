@@ -1,4 +1,3 @@
-const { type } = require("os");
 const readline = require(`readline`);
 const reader = readline.createInterface({
     input : process.stdin,
