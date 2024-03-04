@@ -1,5 +1,6 @@
 const array = [
     {
+        id: "22mca010",
         firstName : "Harish",
         lastName : "Kathir",
         batch : "2024",
@@ -13,6 +14,7 @@ const array = [
         DA: "yes"
     },
     {
+        id: "22mca017",
         firstName : "Kavin",
         lastName : "Gunasekar",
         batch : "2024",
@@ -26,6 +28,7 @@ const array = [
         DA: "no"
     },
     {
+        id: "22mca062",
         firstName : "Vijay",
         lastName : "vignesh",
         batch : "2024",
@@ -39,6 +42,7 @@ const array = [
         DA: "no"
     },
     {
+        id: "22mca045",
         firstName : "Shakthi",
         lastName : "D",
         batch : "2024",
@@ -52,6 +56,7 @@ const array = [
         DA: "no"
     },
     {
+        id: "21mca016",
         firstName : "Harishma",
         lastName : "Nair",
         batch : "2023",
@@ -65,8 +70,9 @@ const array = [
         DA: "yes"
     },
     {
-        firstName: "Raveena",
-        lastName: "D",
+        id: "22mca015",
+        firstName: "Jolene",
+        lastName: "M",
         batch : "2024",
         grade : {
             sem1: 95,
@@ -78,6 +84,7 @@ const array = [
         DA: "no"
     },
     {
+        id: "21mca037",
         firstName: "Kirsten",
         lastName: "Kenndy",
         batch : "2023",
@@ -85,7 +92,7 @@ const array = [
             sem1: 75,
             sem2: 80,
             sem3 : 79,
-            sem4:84 
+            sem4: 84 
         },
         gender:"male",
         DA: "yes"
