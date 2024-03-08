@@ -22,7 +22,7 @@ function basicDetails(weatherData){
     Details.push({
         "city" : weatherData.name,
         "id" : weatherData.id,
-        "Temp" : weatherData.main.temp+"°c",
+        "Temperature" : weatherData.main.temp+"°c",
         "Pressure" : weatherData.main.pressure,
         "Humidity" : weatherData.main.humidity,
         "WindSpeed" : weatherData.wind.speed
@@ -33,7 +33,7 @@ function basicDetails(weatherData){
 async function displayWeather(city){
     try{
         const weatherData = await getWeatherData(city);
-        console.log(weatherData);
+        // console.log(weatherData);
 
         const Details = basicDetails(weatherData);
         console.log(Details);
@@ -43,5 +43,5 @@ async function displayWeather(city){
 
 }
 
-const city = "chennai";
+const city = "palani";
 displayWeather(city);
