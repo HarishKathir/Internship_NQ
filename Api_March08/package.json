@@ -1,8 +1,8 @@
 {
-  "name": "internship",
+  "name": "api_march08",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "weatherApp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
