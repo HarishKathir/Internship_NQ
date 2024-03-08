@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const monthlypayment = (p,r,n,t) => {
     return (p*(r/n))/(1-(Math.pow((1 + r/n),-n*t)));
 }
@@ -32,4 +34,12 @@ const loanTerm = 30;
 const interestRate = 5;
 const amortizationSchedule = [];
 calculateAmortizationSchedule(loanAmount,interestRate,loanTerm,amortizationSchedule);
-console.log(amortizationSchedule);
+// console.log(amortizationSchedule[358]);
+
+let exportJson = JSON.stringify(amortizationSchedule);
+fs.writeFile('myexport.json',exportJson,(err) => {
+    if (err) {
+        console.error(err);
+        return;
+    };
+    console.log("File has been created")});
