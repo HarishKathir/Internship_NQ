@@ -1,5 +1,4 @@
 const axios = require('axios');
-const fs = require('fs');
 
 async function getWeatherData(city){
 
@@ -9,39 +8,37 @@ async function getWeatherData(city){
     try{
         const response = await axios.get(apiUrl);
         const weatherData = response.data;
-        return weatherData; 
+        return [weatherData]; 
     }catch(error){
         console.log("error in getting weather data");
     }
   
 }
 
-function basicDetails(weatherData){
-
-    const Details = [];
-    Details.push({
-        "city" : weatherData.name,
-        "id" : weatherData.id,
-        "Temperature" : weatherData.main.temp+"°c",
-        "Pressure" : weatherData.main.pressure,
-        "Humidity" : weatherData.main.humidity,
-        "WindSpeed" : weatherData.wind.speed
-    });
-    return Details;
+const kelvinToCelius = (temperature) => {
+    return (temperature - 273.15).toFixed(2);
 }
 
 async function displayWeather(city){
     try{
         const weatherData = await getWeatherData(city);
-        // console.log(weatherData);
 
-        const Details = basicDetails(weatherData);
-        console.log(Details);
+        const displayWeatherData = weatherData.map( weatherData => {
+            return{ 
+                "city" : weatherData.name,
+                "id" : weatherData.id,
+                "Temperature" : kelvinToCelius(weatherData.main.temp)+"°c",
+                "Pressure" : weatherData.main.pressure + "pa",
+                "Humidity" : weatherData.main.humidity + "%",
+                "WindSpeed" : weatherData.wind.speed + "m/s" 
+        };           
+    }); 
+    console.log(displayWeatherData);
     }catch(error){
         console.log("No weather data");
     }
 
 }
-
 const city = "palani";
 displayWeather(city);
+
