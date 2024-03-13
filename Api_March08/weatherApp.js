@@ -1,5 +1,9 @@
 const axios = require('axios');
-
+/**
+ * 
+ * @param {*} city 
+ * @returns 
+ */
 async function getWeatherData(city){
 
     const apiKey = 'f32bc9d113d18edce0e828e145cda259';
